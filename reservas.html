@@ -1,0 +1,70 @@
+<!-- Marina e Rômulo -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Bahia</h1>
+    </header>
+    
+    <main>
+        <table border>
+            <caption>Sugestão: Salvador</caption>
+            <tr>
+                <th><img src="../site/imagens/Bahia1.jpg" title="Salvador" alt="Elevador Lacerda"></th>
+                <th><img src="../site/imagens/Bahia2.jpg" title="Salvador" alt="Pelourinho"></th>
+                <th><img src="../site/imagens/Bahia3.jpg" title="Salvador" alt="Bonfim"></th>
+            </tr>
+            <tr>
+                <th colspan="3">Diária a partir de: R$ 260,00</th>
+            </tr>
+        </table>
+        <h3>Reservar Hotel:</h3>
+            <form method="get">
+                Data: 
+                    <input type="text" name="dia" size="2" maxlength="2">/
+                    <input type="text" name="mes" size="2" maxlength="2">/
+                    <input type="text" name="ano" size="4" maxlength="4">
+                        <br/><br/>
+                Categoria: 
+                    <input type="radio" name="catg" value="smpl"> Simples 
+                    <input type="radio" name="catg" value="luxo"> Luxo
+                        <br/><br/>
+                Destino: 
+                <select name="dest" value="dest">
+                    <option value="esc" name="esc" selected disabled>Escolha o destino...</option>
+                    <option value="sud" name="sud">Sudeste</option>
+                    <option value="ceoeste" name="ceosete">Centro-Oeste</option>
+                    <option value="sul" name="sul">Sul</option>
+                    <option value="nord" name="nord">Nordeste</option>
+                    <option value="norte" name="norte">Norte</option>
+                </select>
+                        <br/><br/>
+                Acomodação: 
+                <select name="acomod" value="acomod">
+                    <option value="esc" name="esc" selected disabled>Escolha a acomodação...</option>
+                    <option value="casal" name="casal">Casal</option>
+                    <option value="dupla" name="dupla">Dupla</option>
+                    <option value="indiv" name="indiv">Individual</option>
+                    <option value="trip" name="trip">Tripla</option>
+                </select>
+                    <input type="checkbox" value="sim" name="criancas"> Crianças?
+                        <br/><br/>
+                    <input type="submit" name="buscar" value="Buscar">
+                    <input type="reset" name="limpa" value="Limpar Dados">
+            </form>
+    </main>
+
+    <footer>
+        <hr/>
+        <a href="../site/index.html"><h2>Voltar</h2></a>
+    </footer>
+
+</body>
+</html>
